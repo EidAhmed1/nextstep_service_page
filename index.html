@@ -994,7 +994,7 @@ document.querySelectorAll('.net-node-circle, .net-line').forEach((el,i)=>{
 /* Waitlist form: validation + submission via Supabase
    NOTE FOR DEVS: عبّي القيمتين تحت من لوحة تحكم Supabase الخاصة فيك:
    Project Settings → API → Project URL, anon public key */
-const SUPABASE_URL = 'https://raevfbjqxgrikyxnkcta.supabase.co/rest/v1/'; // TODO: ضع رابط مشروعك هون
+const SUPABASE_URL = 'https://raevfbjqxgrikyxnkcta.supabase.co'; // TODO: ضع رابط مشروعك هون
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJhZXZmYmpxeGdyaWt5eG5rY3RhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUzMDAxMjEsImV4cCI6MjEwMDg3NjEyMX0.hFVJYHzkrGykU8G13zyDa6kAI2akGdlQtNDiKz9JchY'; // TODO: ضع مفتاح anon public هون (آمن يكون بالكود الظاهر للمستخدم)
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
